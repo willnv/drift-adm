@@ -1,0 +1,249 @@
+:root {
+	--panelBg: #252525;
+	--bodyBg: #353535;
+	--defGreen: #43a047;
+	--inputBorder: #4a4a4a;
+
+	--panelRadius: 4px;
+	--panelShadow: 3px 3px 5px rgba(0,0,0,.10);
+}
+
+.settings_page_drift-adm-settings {
+	background: var(--bodyBg);
+}
+
+.settings_page_drift-adm-settings .wrap > h1 {
+	color: #fff !important;
+}
+
+.settings_page_drift-adm-settings .notice {
+	background: var(--panelBg);
+}
+
+form#driftadm-settings-form {
+	margin-top: 20px;
+	opacity: 0;
+	transition: opacity .2s;
+}
+
+.driftadm-submit-button {
+	width: inherit !important;
+}
+
+.driftadm-settings-footer {
+	padding: 10px;
+	margin-top: auto;
+	border-top: 1px solid #4a4a4a;
+}
+
+.settings-content {
+	display: flex;
+	flex-direction: column;
+	width: 700px;
+	max-width: 100%;
+	background: var(--panelBg);
+	border-radius: var(--panelRadius);
+	box-shadow: var(--panelShadow);
+}
+
+.settings-content .tabs-container {
+    padding: 20px;
+}
+
+.settings-content .tabs-container tr {
+    border-bottom: 1px solid #f5f5f5;
+}
+
+.settings-content input[type='text'] {
+	background: var(--bodyBg);
+	border-color: var(--inputBorder);
+	border-radius: var(--panelRadius);
+	color: #fff;
+	padding: 5px 5px 5px 10px;
+}
+
+.settings-content input[type='text']:focus,
+.settings-content input[type='radio']:focus,
+.settings-content input[type='checkbox']:focus,
+button:focus  {
+	box-shadow: none;
+	border-color: var(--inputBorder);
+	outline: 0;
+}
+
+.settings-content .driftadm-btn {
+	background: var(--bodyBg);
+	border-radius: var(--panelRadius);
+	color: #fff;
+	padding: 5px 26px;
+	border: 1px solid var(--inputBorder);
+	cursor: pointer;
+}
+
+.login-bg-container {
+	display: flex;
+	align-items: flex-start;
+}
+
+.login-bg-choices {
+	margin-left: 30px;
+}
+
+.login-bg-choices .radio-choice:not(:last-of-type) {
+	margin-bottom: 8px;
+}
+
+.settings-content .img-preview {
+	border-radius: var(--panelRadius);
+	border: 1px solid var(--inputBorder);
+}
+
+.login-bg-choice {
+	display: flex;
+	align-items: baseline;
+}
+
+.color-picker-wrapper {
+	position: relative;
+}
+
+.color-picker-wrapper input {
+	max-width: 146px;
+}
+
+.settings-content #color-preview {
+	width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 6px;
+    right: 6px;
+    border-radius: 4px;
+}
+
+.settings-content .radio-option {
+	margin-bottom: 5px;
+}
+
+.settings-content input[type='text']:focus {
+	box-shadow: none;
+	border-color: var(--inputBorder);
+}
+
+.settings-content .option-desc {
+	color: #a7a7a7;
+    margin-top: 0;
+}
+
+.settings-content .inline-option {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.settings-content .option.inline-option:not(:last-of-type) {
+	margin-bottom: 0;
+}
+
+.settings-content .option {
+	margin-bottom: 35px;
+	max-width: 500px;
+}
+
+.settings-content label[for='hide'] {
+	display: none;
+}
+
+.settings-content h3 {
+	color: #fff;
+	margin-bottom: 2px;
+}
+
+.settings-content input[type='radio'],
+.settings-content input[type='checkbox']  {
+	background: var(--bodyBg);
+	border-color: var(--inputBorder);
+}
+
+.settings-content input[type=checkbox]:checked:before {
+	color: var(--defGreen);
+}
+
+input[type=checkbox].checkbox-bool {
+	width: 40px;
+	border-radius: 100px;
+	position: relative;
+	transition: background .25s;
+}
+
+.option input[type=checkbox].checkbox-bool::before {
+	content: "" !important;
+	position: absolute;
+	background: var(--bodyBg);
+	border: 1px solid #a5a5a5;
+	border-radius: 50%;
+	width: 18px;
+	height: 18px;
+	top: -3px;
+	margin: 0;
+	transform: translateX(-20px);
+    transition: all .2s;
+}
+
+input[type=checkbox].checkbox-bool:checked::before {
+	transform: translateX(0);
+	margin: 0;
+}
+
+input[type=checkbox].checkbox-bool:checked {
+	background: var(--defGreen);
+}
+
+.tab-admin-area label[for='option']:not(:first-of-type) {
+	margin-top: 35px;
+}
+
+/* Tabslet */
+.tabs {
+	display: flex;
+}
+
+.tabs li {
+	text-decoration: none;
+	transition: background .2s;
+	position: relative;
+	margin: 7px 0;
+}
+
+.tabs li:hover {
+	background: #1a1a1a;
+}
+
+.tabs li a {
+	text-decoration: none;
+	padding: 10px;
+	display: block;
+	color: #fff;
+}
+
+.tabs ul {
+	background: var(--panelBg);
+	border-radius: var(--panelRadius);
+	box-shadow: var(--panelShadow);
+	height: 350px;
+	margin: 0 30px 0 0;
+}
+
+.tabs .active::before {
+	content: "";
+    background: var(--defGreen);
+    position: absolute;
+	height: 85%;
+	top: 3px;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    width: 3px;
+}
+
+.tabs .active a {
+	color: #fff;
+}

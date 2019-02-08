@@ -1,0 +1,176 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: 2019-02-08 09:56-0200\n"
+"PO-Revision-Date: 2019-02-08 10:01-0200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: pt_BR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.2.1\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: classes/DriftADM_Admin.php:53
+msgid "Logout"
+msgstr "Sair"
+
+#: classes/DriftADM_Loader.php:48
+msgid "Select a image to upload"
+msgstr "Carregar imagem"
+
+#: classes/DriftADM_Loader.php:49
+msgid "Use this image"
+msgstr "Usar esta imagem"
+
+#: classes/DriftADM_Login.php:21
+msgid "Login"
+msgstr "Entrar"
+
+#: classes/DriftADM_Login.php:33
+msgid "Username or e-mail"
+msgstr "Usuário ou e-mail"
+
+#: classes/DriftADM_Login.php:34
+msgid "Password"
+msgstr "Senha"
+
+#: classes/DriftADM_Settings.php:69
+msgid "Menu Title"
+msgstr "Título do menu"
+
+#: classes/DriftADM_Settings.php:70
+msgid "Shown above the main Wordpress Menu."
+msgstr "Exibido acima do menu principal do Wordpress."
+
+#: classes/DriftADM_Settings.php:78
+msgid "Theme"
+msgstr "Tema"
+
+#: classes/DriftADM_Settings.php:79
+msgid "Dark theme may cause layout errors on 3rd party plugin screens."
+msgstr "O tema escuro pode gerar conflitos em páginas de plugins de terceiros."
+
+#: classes/DriftADM_Settings.php:89
+msgid "WP toolbar"
+msgstr "Barra de ferramentas"
+
+#: classes/DriftADM_Settings.php:90
+msgid "Disables default toolbar on front-end."
+msgstr "Desabilita a barra padrão de ferramentas do Wordpress."
+
+#: classes/DriftADM_Settings.php:98
+msgid "WP footer"
+msgstr "WP Rodapé"
+
+#: classes/DriftADM_Settings.php:99
+msgid "Disables the version and welcome message from footer."
+msgstr "Desabilita a mensagem de boas-vindas e a versão do rodapé."
+
+#: classes/DriftADM_Settings.php:107
+msgid "Login Background"
+msgstr "Fundo de login"
+
+#: classes/DriftADM_Settings.php:108
+msgid "Dimensions for the image to appear entirely are 400x400."
+msgstr "As dimensões recomendadas para correta exibição são de 400x400."
+
+#: classes/DriftADM_Settings.php:132
+msgid "Login logo"
+msgstr "Logo do login"
+
+#: classes/DriftADM_Settings.php:133
+msgid "A logo to display on top of your login background."
+msgstr "Uma logo para exibir junto com o fundo de login."
+
+#: classes/DriftADM_Settings.php:264 classes/DriftADM_Settings.php:303
+msgid "Upload image"
+msgstr "Carregar imagem"
+
+#: classes/DriftADM_Settings.php:276
+msgid "Image"
+msgstr "Imagem"
+
+#: classes/DriftADM_Settings.php:281
+msgid "Solid color"
+msgstr "Cor sólida"
+
+#: classes/DriftADM_Settings.php:315
+msgid "Drift ADM - Settings"
+msgstr "DriftADM - Configurações"
+
+#: vendor/color-picker/color-picker.min.js:9
+msgid "change:h"
+msgstr ""
+
+#: vendor/color-picker/color-picker.min.js:9
+msgid "change:sv"
+msgstr ""
+
+#: vendor/color-picker/color-picker.min.js:9
+msgid "change"
+msgstr ""
+
+#: vendor/color-picker/color-picker.min.js:9
+msgid "enter"
+msgstr ""
+
+#: vendor/color-picker/color-picker.min.js:9
+msgid "drag:h"
+msgstr ""
+
+#: vendor/color-picker/color-picker.min.js:9
+msgid "drag"
+msgstr ""
+
+#: vendor/color-picker/color-picker.min.js:9
+msgid "drag:sv"
+msgstr ""
+
+#: vendor/color-picker/color-picker.min.js:9
+msgid "stop:"
+msgstr ""
+
+#: vendor/color-picker/color-picker.min.js:9
+msgid "stop"
+msgstr ""
+
+#: vendor/color-picker/color-picker.min.js:9
+msgid "start:h"
+msgstr ""
+
+#: vendor/color-picker/color-picker.min.js:9
+msgid "start"
+msgstr ""
+
+#: vendor/color-picker/color-picker.min.js:9
+msgid "start:sv"
+msgstr ""
+
+#: vendor/color-picker/color-picker.min.js:9
+msgid "create"
+msgstr ""
+
+#: vendor/color-picker/color-picker.min.js:9
+msgid "destroy"
+msgstr ""
+
+#: vendor/color-picker/color-picker.min.js:9
+msgid "exit"
+msgstr ""
+
+#: vendor/color-picker/color-picker.min.js:9
+msgid "fit"
+msgstr ""
+
+#: views/driftadm-settings-screen.php:10
+msgid "Admin area"
+msgstr "Área admin"
+
+#: views/driftadm-settings-screen.php:11
+msgid "Login page"
+msgstr "Área de login"

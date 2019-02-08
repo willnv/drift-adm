@@ -1,0 +1,12 @@
+#adminmenu,#adminmenu .wp-submenu,#adminmenuback,#adminmenuwrap {
+    width: 200px;
+    background-color: var(--grey);
+}
+
+#wpcontent, #wpfooter {
+    margin-left: 200px
+}
+
+#adminmenu .wp-submenu {
+    position: relative;
+}
