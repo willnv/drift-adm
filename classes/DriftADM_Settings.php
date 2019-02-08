@@ -151,7 +151,7 @@ if ( ! class_exists( 'DriftADM_Settings' ) ) {
                 return get_option( self::$settings[$setting]['id'] );
             }
 
-            return 'nada';
+            return false;
         }
         
 

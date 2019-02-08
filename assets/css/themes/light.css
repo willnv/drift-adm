@@ -1,0 +1,49 @@
+#adminmenu, 
+#adminmenuback, 
+#adminmenuwrap {
+    background-color: #fbfbfb;
+}
+
+#adminmenu a,
+#adminmenu .wp-submenu a {
+    color: #5d5d5d;
+}
+
+#adminmenu .wp-submenu-head, 
+#adminmenu a.menu-top:hover {
+    background: #e4e4e4;
+}
+
+#adminmenu li.wp-has-submenu a.wp-menu-is-open {
+    background: #e4e4e4;
+}
+
+#adminmenu div.wp-menu-image:before,
+#adminmenu li.menu-top.wp-has-submenu > a::after {
+    color: #8e8e8e;
+}
+
+#adminmenu .wp-submenu a:focus,
+#adminmenu .wp-submenu a:hover {
+    color: #000000;
+}
+
+#adminmenu .menu-custom-top h2 {
+    color: #5d5d5d;
+    font-weight: 600;
+}
+
+#adminmenu .wp-not-current-submenu .wp-submenu,
+.folded #adminmenu .wp-has-current-submenu .wp-submenu {
+    border-left: 1px solid #e4e4e4;
+}
+
+.js .postbox .hndle,
+.js .widget .widget-top {
+    color: #9c9c9c;
+}
+
+.postbox {
+    background: #fbfbfb;
+    box-shadow: 1px 1px 2px rgba(0,0,0,.1);
+}

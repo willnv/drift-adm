@@ -4,7 +4,6 @@ defined( 'ABSPATH' ) || exit;
 
 class DriftADM_Admin extends DriftADM_Settings {
 
-
     public function __construct() {
 
         add_action( 'show_admin_bar', array( $this, 'disable_wp_toolbar' ) );
@@ -13,6 +12,8 @@ class DriftADM_Admin extends DriftADM_Settings {
         # footer
         add_filter( 'admin_footer_text', array( $this, 'disable_wp_footer' ), 99 );
         add_filter( 'update_footer', array( $this, 'disable_wp_footer' ), 99 );
+
+        add_action( 'admin_enqueue_scripts', array( $this, 'set_css_vars' ) );
     }
     
 
@@ -25,6 +26,35 @@ class DriftADM_Admin extends DriftADM_Settings {
 
         return true;
     }
+
+
+    /**
+     * Set CSS variables 
+     */
+    public function set_css_vars() {
+        
+        $current_theme = DriftADM_Settings::driftadm_get_setting( 'adm_theme' ); 
+        $colors = array();
+        
+        if ( $current_theme === 'dark' ) {
+            wp_enqueue_style( 'adm-dark-theme', DRIFTADM_ROOT_PATH . 'assets/css/themes/dark.css' );
+        } else if ( $current_theme === 'light' ) {
+            wp_enqueue_style( 'adm-light-theme', DRIFTADM_ROOT_PATH . 'assets/css/themes/light.css' );
+            $colors['menu_links_hover'] = '#e4e4e4';
+            $colors['menu_icons'] = '#8e8e8e';
+        } ?>
+
+        <style>
+            :root {
+                --menuLinksColor: <?= $colors['menu_links']; ?>;
+                --menuLinksHoverColor: <?= $colors['menu_links_hover']; ?>;
+                --menuIconsColor: <?= $colors['menu_icons']; ?>;
+            }
+        </style>
+    <?php
+    }
+
+
 
     /**
      * Displays the menu title on top

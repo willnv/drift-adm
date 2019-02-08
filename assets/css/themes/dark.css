@@ -1,0 +1,9 @@
+#adminmenu, 
+#adminmenuback, 
+#adminmenuwrap {
+    background-color: #131313;
+}
+
+#adminmenu a {
+    color: #fff;
+}

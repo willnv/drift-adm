@@ -3726,8 +3726,6 @@ html.wp-toolbar {
 .js .postbox .hndle,
 .js .widget .widget-top {
     cursor: move;
-    color: #fff;
-    font-weight: bold;
 }
 
 .js .postbox .hndle > span,
@@ -6853,7 +6851,6 @@ table.form-table td .updated p {
 #adminmenuback,
 #adminmenuwrap {
     width: 200px;
-    background-color: var(--greyDark);
 }
 
 #adminmenuback {
@@ -6881,7 +6878,7 @@ table.form-table td .updated p {
 #adminmenu .menu-custom-top {
     order: 1;
     padding-bottom: 12px;
-    border-bottom: 1px solid #484848;
+    border-bottom: 1px solid var(--menuLinksHoverColor);
 }
 
 
@@ -6890,7 +6887,7 @@ table.form-table td .updated p {
 }
 
 #adminmenu .menu-custom-top h2 {
-    color: #fff;
+    color: var(--menuLinksColor);
     margin: 0 0 4px 0; 
 }
 
@@ -6898,10 +6895,10 @@ table.form-table td .updated p {
     padding: 0;
     transition: all .2s;
 }
-
+/*
 #adminmenu .menu-custom-top a:hover {
     color: #fff;
-}
+}*/
 
 .folded #adminmenu,
 .folded #adminmenu li.menu-top,
@@ -7011,20 +7008,22 @@ table.form-table td .updated p {
     display: block;
     line-height: 18px;
     padding: 2px 5px;
-    color: #eee
 }
-
+/*
 #adminmenu .wp-submenu a {
-    color: #b4b9be;
-    color: rgba(240,245,250,.7)
+    color: var(--menuLinksColor);
 }
 
 #adminmenu .wp-submenu a:focus,
 #adminmenu .wp-submenu a:hover {
     color: #fff;
 }
+*/
 /*
-#adminmenu .wp-submenu a:focus,#adminmenu .wp-submenu a:hover,#adminmenu a:hover,#adminmenu li.menu-top>a:focus {
+#adminmenu .wp-submenu a:focus,
+#adminmenu .wp-submenu a:hover,
+#adminmenu a:hover,
+#adminmenu li.menu-top>a:focus {
     color: #00b9eb
 }
 */
@@ -7036,9 +7035,11 @@ table.form-table td .updated p {
     margin-top: 10px;
 }
 
+/*
 #adminmenu li.wp-has-submenu a.wp-menu-is-open {
-	background: var(--greyLight);
+	background: var(--menuLinksHoverColor);
 }
+*/
 
 #adminmenu li.wp-has-submenu.wp-menu-open .wp-submenu {
 	max-height: inherit;
@@ -7050,7 +7051,7 @@ table.form-table td .updated p {
 	font-family: 'dashicons';
 	position: absolute;
 	z-index: 9;
-	color: #fff;
+	color: var(--menuIconsColor);
 	right: 10px;
     top: 8px;
     -webkit-transition: -webkit-transform .25s;
@@ -7117,8 +7118,6 @@ table.form-table td .updated p {
 #adminmenu li.menu-top:hover,
 #adminmenu li.opensub>a.menu-top {
     position: relative;
-    /*background-color: #191e23;*/
-    color: var(--greenLight);
 }
 
 .folded #adminmenu li.menu-top:hover,.folded #adminmenu li.opensub>a.menu-top,.folded #adminmenu li>a.menu-top:focus {
@@ -7140,10 +7139,10 @@ table.form-table td .updated p {
     top: -1000em
 }
 
-#adminmenu .wp-not-current-submenu .wp-submenu,.folded #adminmenu .wp-has-current-submenu .wp-submenu {
+#adminmenu .wp-not-current-submenu .wp-submenu,
+.folded #adminmenu .wp-has-current-submenu .wp-submenu {
     min-width: 160px;
     width: auto;
-    border-left: 1px solid #4a4a4a;
 }
 
 #adminmenu .wp-submenu a {
@@ -7152,11 +7151,11 @@ table.form-table td .updated p {
     margin: 0;
     padding: 5px 0
 }
-
+/*
 #adminmenu .opensub .wp-submenu li.current a,#adminmenu .wp-submenu li.current,#adminmenu .wp-submenu li.current a,#adminmenu .wp-submenu li.current a:focus,#adminmenu .wp-submenu li.current a:hover,#adminmenu a.wp-has-current-submenu:focus+.wp-submenu li.current a {
-    color: #fff
+    color: #fff;
 }
-
+*/
 #adminmenu .wp-not-current-submenu li>a,.folded #adminmenu .wp-has-current-submenu li>a {
     padding-right: 16px;
     padding-left: 14px;
@@ -7177,13 +7176,12 @@ table.form-table td .updated p {
     transition: background .15s;
 }
 
-
 #adminmenu .wp-submenu-head,
 #adminmenu a.menu-top:hover {
     font-weight: 400;
     line-height: 18px;
     padding: 0;
-    background: #292929;
+    background: var(--menuLinksHoverColor);
 }
 
 #adminmenu .wp-submenu-head {
@@ -7236,10 +7234,11 @@ div.wp-menu-image:before {
     transition: all .1s ease-in-out
 }
 
+/*
 #adminmenu div.wp-menu-image:before {
-    color: #a0a5aa;
-    color: rgba(240,245,250,.6)
+    color: var(--menuIconsColor);
 }
+*/
 
 #adminmenu .current div.wp-menu-image:before,#adminmenu .wp-has-current-submenu div.wp-menu-image:before,#adminmenu a.current:hover div.wp-menu-image:before,#adminmenu a.wp-has-current-submenu:hover div.wp-menu-image:before,#adminmenu li.wp-has-current-submenu a:focus div.wp-menu-image:before,#adminmenu li.wp-has-current-submenu.opensub div.wp-menu-image:before,#adminmenu li.wp-has-current-submenu:hover div.wp-menu-image:before {
     color: #fff
@@ -10947,7 +10946,7 @@ input#link_description,input#link_url {
 .postbox {
     min-width: 255px;
     /*border: 1px solid #e5e5e5;*/
-    background: var(--greyDark);
+   /* background: var(--greyDark);*/
     border-radius: 4px;
 }
 
@@ -18296,7 +18295,7 @@ body.locale-he-il,body.locale-he-il .press-this a.wp-switch-editor {
 .wp-core-ui .button,
 .wp-core-ui .button-secondary {
     color: #555;
-    border: 1px solid #d4d4d4;
+    /*border: 1px solid #d4d4d4;*/
     background: #f7f7f7;
     transition: all .2s;
 }
