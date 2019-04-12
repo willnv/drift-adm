@@ -50,9 +50,11 @@ jQuery(function($) {
             this.colorInput = document.getElementById('login_bg_color_preview');
             this.colorPreview = $('#color-preview');
             this.triggerColorPicker = this.triggerColorPicker.bind( this );
+            this.removeImageButton = $(".remove-img");
 
             // Init functions
             this.triggerColorPicker(this.colorInput, this.colorPreview);
+            this.removeImageButton.click(this.removeImage);
         },
 
         /**
@@ -72,6 +74,11 @@ jQuery(function($) {
     
                 preview.css('background-color', colorHex);
             });
+        },
+        removeImage: function(e) {
+            let image = $(e.target).parent().find('img');
+            image.prop('src', '');
+            $("#login_logo").val(image.attr('src'));
         }
     }
 

@@ -295,11 +295,13 @@ if ( ! class_exists( 'DriftADM_Settings' ) ) {
          */
         private static function output_login_logo( $args ) {
             
-            $empty_img_dir = DRIFTADM_ROOT_PATH . '/assets/img/empty_img.png'; ?>
+            $empty_img_dir = DRIFTADM_ROOT_PATH . '/assets/img/empty_img.png'; 
+            $empty = get_option( $args['id'] ) ? '' : 'empty'; ?>
 
-            <div class="media-upload-wrapper">
+            <div class="media-upload-wrapper <?= $empty ?>">
                 <input type="hidden" class="media-hidden-value" value="<?= get_option( $args['id'] ); ?>" name="<?= $args['id']; ?>" id="<?= $args['id']; ?>">
                 <div class="media-preview">
+                    <div class="remove-img">x</div>
                     <img onerror="this.src='<?= $empty_img_dir; ?>'" class="img-preview" src="<?= get_option( 'login_logo' ); ?>" width="145" height="100">
                 </div>
                 <button class="driftadm-btn driftadm-upload-media-button" type="button"><?php _e( 'Upload image', 'drift-adm' ); ?></button>
