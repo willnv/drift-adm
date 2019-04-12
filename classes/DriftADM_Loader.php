@@ -50,7 +50,7 @@ if ( ! class_exists( 'DriftADM_Loader' ) ) {
             ) );
         }
 
-        public function spawn_classes() {
+        public static function spawn_classes() {
             require_once( dirname( __FILE__ ) . '/DriftADM_Settings.php' );
         }
 
@@ -60,7 +60,7 @@ if ( ! class_exists( 'DriftADM_Loader' ) ) {
             load_plugin_textdomain( 'drift-adm', false, $path );
         }
 
-        public function spawn_assets() {
+        public static function spawn_assets() {
             /**
              * load these assets 
              * only on the settings page.

@@ -114,6 +114,7 @@ if ( ! class_exists( 'DriftADM_Settings' ) ) {
             $settings['login_bg_img'] = array(
                 'id'          => 'login_bg_img',
                 'name'        => '',
+                'description'   => '',
                 'type'        => 'string',
                 //'input_type'  => 'hidden',
                 'section'     => 'login_settings'
@@ -122,6 +123,7 @@ if ( ! class_exists( 'DriftADM_Settings' ) ) {
             $settings['login_bg_color'] = array(
                 'id'          => 'login_bg_color',
                 'name'        => '',
+                'description'   => '',
                 'type'        => 'string',
                 //'input_type'  => 'hidden',
                 'section'     => 'login_settings'
@@ -172,11 +174,11 @@ if ( ! class_exists( 'DriftADM_Settings' ) ) {
 
                 $args = array_merge( $setting, array(
                     'label_for'   => 'hide',
-                    'description' => $setting['description'],
-                    'input_type'  => $setting['input_type']
+                    'description' =>  isset( $setting['description'] ) ? $setting['description'] : '',
+                    'input_type'  => isset( $setting['input_type'] ) ? $setting['input_type'] : ''
                 ) );
 
-                if ( $setting['input_type'] === 'radio' ) {
+                if ( isset( $setting['input_type'] ) && $setting['input_type'] === 'radio' ) {
                     $args['radio_choices'] = $setting['radio_choices'];
                 }
 
